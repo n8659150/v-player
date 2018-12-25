@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button @click="attachMusic()">播放指定音乐</el-button>
+    <el-button @click="attachMusicSrc()">播放指定音乐</el-button>
     <el-row>
       <el-col :span="4">
         <el-popover placement="top-start" trigger="hover">
@@ -57,7 +57,7 @@ export default {
   },
   methods:{
     attachMusicSrc() {
-      this.currentSrc = 'http://win.web.ri01.sycdn.kuwo.cn/35590f650bf6372dfdf372c462177006/5c13de05/resource/n3/30/33/69130738.mp3';
+      this.currentSrc = 'https://music.163.com/song/media/outer/url?id=30987293.mp3';
       helper.updateSource(this.$refs.player,this.currentSrc);
       
     },
